@@ -39,6 +39,10 @@
     />
     <link
       rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/font-applesdgothicneo@1.0/all.min.css"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
     <link
@@ -51,18 +55,155 @@
     />
     <link rel="stylesheet" href="./dist/css/comm.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script defer src="./dist/js/comm.js"></script>
   </head>
   <body>
-    <div class="wrap">
-      <div class="intro-wrap">
-        <h1>JANG KA KYUNG</h1>
+    <header id="header" class="container"></header>
+    <main id="fullpage">
+      <div class="wrap">
+        <section data-menuanchor="anchor1" id="intro" class="section">
+          <div class="intro-wrap">
+            <div class="inner">
+              <div class="name">
+                <!-- <h1>JANG KA KYUNG</h1>
+                <span>PORTFOLIO</span> -->
+                <h1>FLOW WITH ME</h1>
+                <!-- <span>
+                  &quot; Like the sea's waves, my path is endless &#58; &#41;
+                  flow with me. &quot;</span
+                > -->
+                <span>
+                  바다의 파도처럼 나의 길은 끝이 없습니다 &#58; &#41; 나와 함께
+                  흘러가요.
+                </span>
+              </div>
+
+              <div class="id-card">
+                <img src="./images/Mockup.png" alt="" />
+              </div>
+              <div class="con">
+                <span>Contact</span>
+                <p class="number">010 5180 0516</p>
+                <p class="e-mail">aswjk2222@naver.com</p>
+              </div>
+              <!-- <div class="flow-container">
+                <div class="flow-content">
+                  <strong>FLOW WITH ME</strong>
+                  <p>
+                    &quot; Like the sea's waves, my path is endless &#58; &#41; flow
+                    with me. &quot;
+                  </p>
+                  <p>
+                    바다의 파도처럼 나의 길은 끝이 없습니다&#58; &#41; 나와 함께
+                    흘러가요.
+                  </p>
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </section>
+        <section data-menuanchor="anchor2" id="profile" class="section">
+          <div class="profile-wrap">
+            <div class="profile-wrapper inner">
+              <div class="profile-con">
+                <div class="pro-box co">
+                  <h2>WHO AM I &#63;</h2>
+                  <div class="who-wrap">
+                    <div class="comment-box"></div>
+                  </div>
+                </div>
+                <div class="pro-box bio">
+                  <h2>ABOUT ME &#33;</h2>
+                  <div class="me-box">
+                    <div class="about about-me">
+                      <h3>About</h3>
+                      <div class="me-info">
+                        <span>Name</span>
+                        <p>장가경 <br />Jang Ka Kyung</p>
+                      </div>
+                      <div class="me-info">
+                        <span>Birthday</span>
+                        <p>1998.11.21</p>
+                      </div>
+                      <div class="me-info">
+                        <span>Like</span>
+                        <p>노는 게 제일 좋아</p>
+                      </div>
+                    </div>
+                    <div class="contact about-me">
+                      <h3>Contact</h3>
+                      <div class="me-info">
+                        <span>Phone</span>
+                        <p>010 5180 0516</p>
+                      </div>
+                      <div class="me-info">
+                        <span>Email</span>
+                        <p>aswjk2222@naver.com</p>
+                      </div>
+                      <div class="me-info">
+                        <span>Archive</span>
+                        <p>에베벱벱</p>
+                      </div>
+                      <div class="me-info">
+                        <span>Github</span>
+                        <p>깃허브</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="me-box">
+                    <div class="aducation about-me">
+                      <h3>Aducation</h3>
+                      <div class="me-info">
+                        <span>2023</span>
+                        <p>UI?UX ㅓ쩌고</p>
+                      </div>
+                      <div class="me-info">
+                        <span>2018</span>
+                        <p>
+                          서울예술실용전문학교 <br />
+                          모델연기예술학과 중퇴
+                        </p>
+                      </div>
+
+                      <div class="me-info">
+                        <span>2017</span>
+                        <p>
+                          서울예술실용전문학교 <br />
+                          패션디자인학과 입학
+                        </p>
+                      </div>
+                      <div class="me-info">
+                        <span>2017</span>
+                        <p>
+                          전주예술고등학교 <br />
+                          미술과 졸업
+                        </p>
+                      </div>
+                    </div>
+                    <div class="skill about-me">
+                      <h3>Skill</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section data-menuanchor="anchor3" id="works" class="section">
+          <div class="work-wrap">
+            <div class="work-wrapper inner">
+              <div class="index-wrap"></div>
+              <div class="index-wrap"></div>
+              <div class="index-wrap"></div>
+            </div>
+          </div>
+        </section>
+        <footer id="footer" class="container"></footer>
       </div>
-      <!-- logo 왼쪽 type -->
-      <header id="header" class="container"></header>
-      <main id="main"></main>
-      <footer id="footer" class="container"></footer>
-    </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js"></script>
   </body>
 </html>

@@ -135,7 +135,7 @@ body {
   background: #fff;
   font-size: 14px;
   line-height: 1.5;
-  font-family: "SF Pro Display", sans-serif;
+  font-family: "SF Pro Display", "AppleSDGothicNeo", "Noto Sans KR", sans-serif;
   color: $txt;
 }
 
@@ -174,7 +174,7 @@ hr {
 }
 
 input[type="password"] {
-  font-family: "SF Pro Display";
+  font-family: "SF Pro Display", "Apple SD Gothic Neo", "Noto Sans KR";
 }
 
 /* 웹폰트 사용시 점이 안보임 - 기본 폰트 사용  */
