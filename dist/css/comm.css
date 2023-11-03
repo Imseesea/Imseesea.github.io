@@ -266,6 +266,16 @@ section {
   height: 100vh;
 }
 
+h1 {
+  font-size: 72px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 56px;
+  font-weight: 600;
+}
+
 .contents-box {
   background: #fbfbfd;
   box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.16);
@@ -295,10 +305,6 @@ section {
 
 .name {
   padding-bottom: 40px;
-}
-.name h1 {
-  font-size: 72px;
-  font-weight: 700;
 }
 .name span {
   display: block;
@@ -360,10 +366,6 @@ section {
   display: flex;
   width: 100%;
 }
-.profile-wrap .profile-con .pro-box h2 {
-  font-size: 56px;
-  font-weight: 600;
-}
 
 .co {
   width: 50%;
@@ -420,15 +422,108 @@ section {
 .work-wrap {
   background: #fff;
 }
-.work-wrap .work-wrapper {
-  background: #fbfbfd;
-  box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.16);
+
+.slide-wrap {
   position: relative;
+  width: 80%;
+  height: 80vh;
+  margin: 0 auto;
   overflow: hidden;
-  transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
-  box-sizing: border-box;
   border-radius: 20px;
 }
-.work-wrap .work-wrapper:hover {
-  transform: scale3d(1.01, 1.01, 1.01);
+.slide-wrap::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  width: 100%;
+  opacity: 0.8;
+  background-color: rgba(255, 254, 254, 0.2);
+  transform: translateX(-100%);
+  transition: transform 0.4s;
+}
+
+.inner-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+}
+.inner-box .slide-cover {
+  position: relative;
+  width: 60%;
+  height: 80%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.inner-box .slide-cover .onepage {
+  vertical-align: top;
+  max-width: 100%;
+  transition: all 3s;
+  transition-delay: 0.5s;
+}
+.inner-box .slide-cover .onepage:hover {
+  transform: translateY(-76%);
+  transition: all 5s;
+}
+.inner-box .slide-cover .dongmoon {
+  vertical-align: top;
+  max-width: 100%;
+  transition: all 3s;
+  transition-delay: 0.5s;
+}
+.inner-box .slide-cover .dongmoon:hover {
+  transform: translateY(-66%);
+  transition: all 5s;
+}
+.inner-box .slide-cover .zara {
+  vertical-align: top;
+  max-width: 100%;
+  transition: all 3s;
+  transition-delay: 0.5s;
+}
+.inner-box .slide-cover .zara:hover {
+  transform: translateY(-76%);
+  transition: all 5s;
+}
+.inner-box .slide-desc {
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  width: 30%;
+  height: 80%;
+  color: #000000;
+}
+.inner-box .slide-desc .desc {
+  display: flex;
+  padding: 0px;
+}
+.inner-box .slide-desc .desc ul {
+  padding: 0;
+}
+.inner-box .slide-desc .desc li {
+  margin-bottom: 0.625rem;
+  line-height: 1.5;
+}
+.inner-box .slide-desc .desc li span {
+  font-weight: 600;
+  padding-right: 20px;
+}
+.inner-box .slide-desc .link a {
+  padding: 8px 16px;
+  border-radius: 5px;
+  color: #795548;
+  font-size: 0.875rem;
+  font-weight: 700;
+  border: 2px solid;
+  border-top-width: 1px;
+  border-left-width: 1px;
+  transition: 0.3s;
+}
+.inner-box .slide-desc .link a:hover {
+  background-color: #795548;
+  border-color: #000000;
+  color: #ffffff;
 }/*# sourceMappingURL=comm.css.map */
