@@ -17,14 +17,7 @@ $(document).ready(function () {
     autoScrolling: true,
     scrollHorizontally: true,
     navigation: true,
-    anchors: [
-      "firstPage",
-      "secondPage",
-      "thirdPage",
-      "fourthPage",
-      "fifthPage",
-      "sixthpage",
-    ],
+    anchors: ["firstPage", "secondPage", "3rdPage", "4thpage", "5thpage"],
     afterLoad: function (anchorLink, index) {
       if (index == 1) {
         $(".home-wrap").css({
@@ -34,5 +27,30 @@ $(document).ready(function () {
         //
       }
     },
+
+    // onLeave: function (index, nextIndex, derection) {
+    //   console.log(nextIndex);
+    //   if (nextIndex == 3) {
+    //     $(".mockup_mini").addClass("mockup_ani");
+    //     $(".mini_bg").addClass("hover_bg_ani");
+    //   } else {
+    //     $(".mockup_mini").removeClass("mockup_ani");
+    //     $(".mini_bg").removeClass("hover_bg_ani");
+    //   }
+    //   if (nextIndex == 4) {
+    //     $(".mockup_melon").addClass("mockup_ani");
+    //     $(".melon_bg").addClass("hover_bg_ani");
+    //   } else {
+    //     $(".mockup_melon").removeClass("mockup_ani");
+    //     $(".melon_bg").removeClass("hover_bg_ani");
+    //   }
+    //   if (nextIndex == 5) {
+    //     $(".mockup_nobrand").addClass("mockup_ani");
+    //     $(".nobrand_bg").addClass("hover_bg_ani");
+    //   } else {
+    //     $(".mockup_nobrand").removeClass("mockup_ani");
+    //     $(".nobrand_bg").removeClass("hover_bg_ani");
+    //   }
+    // },
   });
 });

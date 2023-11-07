@@ -264,6 +264,7 @@ html {
 section {
   width: 100%;
   height: 100vh;
+  position: relative;
 }
 
 h1 {
@@ -295,12 +296,14 @@ h2 {
   width: 100%;
   height: 100vh;
   color: #fff;
+  position: relative;
 }
 
 .inner {
   max-width: 1440px;
   margin: 0 auto;
   height: 100vh;
+  position: relative;
 }
 
 .name {
@@ -312,6 +315,9 @@ h2 {
 }
 
 .con {
+  position: absolute;
+  bottom: 95px;
+  right: 0;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -325,13 +331,20 @@ h2 {
   font-size: 20px;
 }
 
+.id-card {
+  position: absolute;
+  top: 69px;
+  left: 50%;
+  transform: translate(-50%);
+  width: 240px;
+  height: 666px;
+}
 .id-card img {
   display: block;
   margin: 0 auto;
   -o-object-fit: contain;
      object-fit: contain;
-  width: 500px;
-  height: 600px;
+  width: 100%;
 }
 
 .flow-container {
@@ -375,19 +388,18 @@ h2 {
   top: 175px;
   left: 0;
   right: 0;
-  background: #fff;
-  padding: 30px;
-  margin: 0 auto;
-  box-sizing: border-box;
-  border-radius: 28px;
-  width: 47%;
   height: 375px;
-  box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.16);
-  overflow: hidden;
   transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
 }
 .co .comment-box .info-box:hover {
   transform: scale3d(1.01, 1.01, 1.01);
+}
+.co .comment-box .info-box img {
+  display: block;
+  margin: 0 auto;
+  width: 360px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .co .comment-box .comment-chat {
   font-size: 20px;
@@ -410,8 +422,8 @@ h2 {
 }
 .co .comment-box .comment-chat .p1 {
   position: absolute;
-  top: 30px;
-  left: 0;
+  top: -24px;
+  left: 55px;
 }
 .co .comment-box .comment-chat .p1:before {
   right: -7px;
@@ -427,8 +439,8 @@ h2 {
 }
 .co .comment-box .comment-chat .p2 {
   position: absolute;
-  top: 30px;
-  right: 10px;
+  top: 10px;
+  right: 9px;
 }
 .co .comment-box .comment-chat .p2:before {
   left: -7px;
@@ -444,8 +456,8 @@ h2 {
 }
 .co .comment-box .comment-chat .p3 {
   position: absolute;
-  top: 120px;
-  right: 0;
+  top: 160px;
+  right: -35px;
 }
 .co .comment-box .comment-chat .p3:before {
   left: -7px;
@@ -461,9 +473,8 @@ h2 {
 }
 .co .comment-box .comment-chat .p4 {
   position: absolute;
-  top: 80%;
+  bottom: 10%;
   right: 0;
-  transform: translate(-50%);
 }
 .co .comment-box .comment-chat .p4:before {
   left: -7px;
@@ -479,9 +490,8 @@ h2 {
 }
 .co .comment-box .comment-chat .p5 {
   position: absolute;
-  top: 80%;
-  left: 0;
-  transform: translate(-50%);
+  bottom: -42px;
+  left: 30px;
 }
 .co .comment-box .comment-chat .p5:before {
   right: -7px;
@@ -497,9 +507,8 @@ h2 {
 }
 .co .comment-box .comment-chat .p6 {
   position: absolute;
-  top: 90%;
-  left: 0;
-  transform: translate(-80%);
+  bottom: 84px;
+  left: -85px;
 }
 .co .comment-box .comment-chat .p6:before {
   right: -7px;
@@ -515,9 +524,8 @@ h2 {
 }
 .co .comment-box .comment-chat .p7 {
   position: absolute;
-  top: 150px;
-  left: 0;
-  transform: translate(-30%);
+  top: 40px;
+  left: -54px;
 }
 .co .comment-box .comment-chat .p7:before {
   right: -7px;
@@ -546,6 +554,9 @@ h2 {
   display: grid;
   width: 45%;
 }
+.bio h2 {
+  margin-bottom: 20px;
+}
 .bio .me-box {
   display: flex;
   justify-content: space-between;
@@ -557,7 +568,7 @@ h2 {
   box-sizing: border-box;
   border-radius: 28px;
   width: 47%;
-  height: 375px;
+  height: 360px;
   box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.16);
   position: relative;
   overflow: hidden;
@@ -599,12 +610,6 @@ h2 {
   height: 100vh;
   display: flex;
   align-items: center;
-  filter: grayscale(100%);
-  animation: 2s 1.5s forwards;
-}
-.index-wrap:hover {
-  transition: all 1s;
-  filter: grayscale(0);
 }
 
 .slide-wrap {
@@ -614,6 +619,12 @@ h2 {
   margin: 0 auto;
   overflow: hidden;
   border-radius: 28px;
+  filter: grayscale(100%);
+  animation: 2s 1.5s forwards;
+}
+.slide-wrap:hover {
+  filter: grayscale(0%);
+  transition: all 1.3s;
 }
 .slide-wrap:hover::before {
   transform: translateX(0);
@@ -770,4 +781,48 @@ h2 {
 .inner-box .slide-desc .link a:hover {
   background-color: #0077ed;
   color: #ffffff;
+}
+
+.hover_bg_ani {
+  opacity: 0;
+}
+
+.mockup {
+  width: 1200px;
+  position: absolute;
+  left: 50%;
+  top: 50px;
+  z-index: 100;
+  transform: translateX(-50%);
+}
+.mockup img {
+  display: block;
+  width: 100%;
+}
+
+.active .hover_bg_ani {
+  animation: web_bg 2s 1.5s forwards;
+}
+.active .mockup_ani {
+  animation: mockup 1s 1.5s forwards;
+}
+.active .mockup_ani .mockup img {
+  width: 100%;
+}
+
+@keyframes web_bg {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes mockup {
+  100% {
+    width: 500px;
+    position: absolute;
+    left: 85%;
+    top: 60%;
+  }
 }/*# sourceMappingURL=comm.css.map */
