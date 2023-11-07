@@ -361,10 +361,11 @@ h2 {
 .profile-wrap .profile-con {
   display: flex;
   width: 100%;
+  justify-content: space-between;
 }
 
 .co {
-  width: 50%;
+  width: 45%;
 }
 .co .comment-box {
   position: relative;
@@ -412,69 +413,143 @@ h2 {
   top: 30px;
   left: 0;
 }
-.co .comment-box .comment-chat .p2 {
-  position: absolute;
-  top: 30px;
-  right: 0;
-}
-.co .comment-box .comment-chat .p3 {
-  position: absolute;
-  top: 30px;
-  right: 0;
-}
-.co .comment-box .comment-chat .p3::after {
-  content: "";
+.co .comment-box .comment-chat .p1:before {
   right: -7px;
   width: 20px;
   background-color: #0b93f6;
   border-bottom-left-radius: 16px 14px;
 }
-.co .comment-box .comment-chat .p3::before {
-  display: none;
+.co .comment-box .comment-chat .p1:after {
+  right: -26px;
+  width: 26px;
+  background-color: #fbfbfd;
+  border-bottom-left-radius: 10px;
+}
+.co .comment-box .comment-chat .p2 {
+  position: absolute;
+  top: 30px;
+  right: 10px;
+}
+.co .comment-box .comment-chat .p2:before {
+  left: -7px;
+  width: 20px;
+  background-color: #e5e5ea;
+  border-bottom-right-radius: 16px 14px;
+}
+.co .comment-box .comment-chat .p2:after {
+  left: -26px;
+  width: 26px;
+  background-color: #fbfbfd;
+  border-bottom-right-radius: 10px;
+}
+.co .comment-box .comment-chat .p3 {
+  position: absolute;
+  top: 120px;
+  right: 0;
+}
+.co .comment-box .comment-chat .p3:before {
+  left: -7px;
+  width: 20px;
+  background-color: #0b93f6;
+  border-bottom-right-radius: 16px 14px;
+}
+.co .comment-box .comment-chat .p3:after {
+  left: -26px;
+  width: 26px;
+  background-color: #fbfbfd;
+  border-bottom-right-radius: 10px;
+}
+.co .comment-box .comment-chat .p4 {
+  position: absolute;
+  top: 80%;
+  right: 0;
+  transform: translate(-50%);
+}
+.co .comment-box .comment-chat .p4:before {
+  left: -7px;
+  width: 20px;
+  background-color: #e5e5ea;
+  border-bottom-right-radius: 16px 14px;
+}
+.co .comment-box .comment-chat .p4:after {
+  left: -26px;
+  width: 26px;
+  background-color: #fbfbfd;
+  border-bottom-right-radius: 10px;
+}
+.co .comment-box .comment-chat .p5 {
+  position: absolute;
+  top: 80%;
+  left: 0;
+  transform: translate(-50%);
+}
+.co .comment-box .comment-chat .p5:before {
+  right: -7px;
+  width: 20px;
+  background-color: #e5e5ea;
+  border-bottom-left-radius: 16px 14px;
+}
+.co .comment-box .comment-chat .p5:after {
+  right: -26px;
+  width: 26px;
+  background-color: #fbfbfd;
+  border-bottom-left-radius: 10px;
+}
+.co .comment-box .comment-chat .p6 {
+  position: absolute;
+  top: 90%;
+  left: 0;
+  transform: translate(-80%);
+}
+.co .comment-box .comment-chat .p6:before {
+  right: -7px;
+  width: 20px;
+  background-color: #0b93f6;
+  border-bottom-left-radius: 16px 14px;
+}
+.co .comment-box .comment-chat .p6:after {
+  right: -26px;
+  width: 26px;
+  background-color: #fbfbfd;
+  border-bottom-left-radius: 10px;
+}
+.co .comment-box .comment-chat .p7 {
+  position: absolute;
+  top: 150px;
+  left: 0;
+  transform: translate(-30%);
+}
+.co .comment-box .comment-chat .p7:before {
+  right: -7px;
+  width: 20px;
+  background-color: #e5e5ea;
+  border-bottom-left-radius: 16px 14px;
+}
+.co .comment-box .comment-chat .p7:after {
+  right: -26px;
+  width: 26px;
+  background-color: #fbfbfd;
+  border-bottom-left-radius: 10px;
 }
 .co .comment-box .comment-chat .send {
   color: #fff;
   background: #0b93f6;
   align-self: flex-end;
 }
-.co .comment-box .comment-chat .send:before {
-  right: -7px;
-  width: 20px;
-  background-color: #0b93f6;
-  border-bottom-left-radius: 16px 14px;
-}
-.co .comment-box .comment-chat .send:after {
-  right: -26px;
-  width: 26px;
-  background-color: #fff;
-  border-bottom-left-radius: 10px;
-}
 .co .comment-box .comment-chat .receive {
   background: #e5e5ea;
   color: black;
   align-self: flex-start;
 }
-.co .comment-box .comment-chat .receive:before {
-  left: -7px;
-  width: 20px;
-  background-color: #e5e5ea;
-  border-bottom-right-radius: 16px 14px;
-}
-.co .comment-box .comment-chat .receive:after {
-  left: -26px;
-  width: 26px;
-  background-color: #fff;
-  border-bottom-right-radius: 10px;
-}
 
 .bio {
   display: grid;
-  width: 50%;
+  width: 45%;
 }
 .bio .me-box {
   display: flex;
-  justify-content: space-around;
-  margin-bottom: 20.5px;
+  justify-content: space-between;
+  margin-bottom: 40.5px;
 }
 .bio .about-me {
   background: #fff;

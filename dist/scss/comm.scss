@@ -109,11 +109,12 @@ h2 {
   .profile-con {
     display: flex;
     width: 100%;
+    justify-content: space-between;
     // height: auto;
   }
 }
 .co {
-  width: 50%;
+  width: 45%;
   .comment-box {
     position: relative;
 
@@ -165,32 +166,6 @@ h2 {
         position: absolute;
         top: 30px;
         left: 0;
-      }
-      .p2 {
-        position: absolute;
-        top: 30px;
-        right: 0;
-      }
-      .p3 {
-        position: absolute;
-        top: 30px;
-        right: 0;
-        &::after {
-          content: "";
-          left: -26px;
-          width: 26px;
-          background-color: &chat-b;
-          border-bottom-right-radius: 10px;
-        }
-        &::before {
-          display: none;
-        }
-      }
-      .send {
-        color: $w;
-        background: $chat-b;
-        align-self: flex-end;
-
         &:before {
           right: -7px;
           width: 20px;
@@ -201,15 +176,14 @@ h2 {
         &:after {
           right: -26px;
           width: 26px;
-          background-color: $w;
+          background-color: $bg-sub1;
           border-bottom-left-radius: 10px;
         }
       }
-      .receive {
-        background: $chat-g;
-        color: black;
-        align-self: flex-start;
-
+      .p2 {
+        position: absolute;
+        top: 30px;
+        right: 10px;
         &:before {
           left: -7px;
           width: 20px;
@@ -220,21 +194,154 @@ h2 {
         &:after {
           left: -26px;
           width: 26px;
-          background-color: $w;
+          background-color: $bg-sub1;
           border-bottom-right-radius: 10px;
         }
+      }
+      .p3 {
+        position: absolute;
+        top: 120px;
+        right: 0;
+        &:before {
+          left: -7px;
+          width: 20px;
+          background-color: $chat-b;
+          border-bottom-right-radius: 16px 14px;
+        }
+
+        &:after {
+          left: -26px;
+          width: 26px;
+          background-color: $bg-sub1;
+          border-bottom-right-radius: 10px;
+        }
+      }
+      .p4 {
+        position: absolute;
+        top: 80%;
+        right: 0;
+        transform: translate(-50%);
+        &:before {
+          left: -7px;
+          width: 20px;
+          background-color: $chat-g;
+          border-bottom-right-radius: 16px 14px;
+        }
+
+        &:after {
+          left: -26px;
+          width: 26px;
+          background-color: $bg-sub1;
+          border-bottom-right-radius: 10px;
+        }
+      }
+      .p5 {
+        position: absolute;
+        top: 80%;
+        left: 0;
+        transform: translate(-50%);
+        &:before {
+          right: -7px;
+          width: 20px;
+          background-color: $chat-g;
+          border-bottom-left-radius: 16px 14px;
+        }
+
+        &:after {
+          right: -26px;
+          width: 26px;
+          background-color: $bg-sub1;
+          border-bottom-left-radius: 10px;
+        }
+      }
+      .p6 {
+        position: absolute;
+        top: 90%;
+        left: 0;
+        transform: translate(-80%);
+        &:before {
+          right: -7px;
+          width: 20px;
+          background-color: $chat-b;
+          border-bottom-left-radius: 16px 14px;
+        }
+
+        &:after {
+          right: -26px;
+          width: 26px;
+          background-color: $bg-sub1;
+          border-bottom-left-radius: 10px;
+        }
+      }
+      .p7 {
+        position: absolute;
+        top: 150px;
+        left: 0;
+        transform: translate(-30%);
+        &:before {
+          right: -7px;
+          width: 20px;
+          background-color: $chat-g;
+          border-bottom-left-radius: 16px 14px;
+        }
+
+        &:after {
+          right: -26px;
+          width: 26px;
+          background-color: $bg-sub1;
+          border-bottom-left-radius: 10px;
+        }
+      }
+      .send {
+        color: $w;
+        background: $chat-b;
+        align-self: flex-end;
+
+        // &:before {
+        //   right: -7px;
+        //   width: 20px;
+        //   background-color: $chat-b;
+        //   border-bottom-left-radius: 16px 14px;
+        // }
+
+        // &:after {
+        //   right: -26px;
+        //   width: 26px;
+        //   background-color: $bg-sub1;
+        //   border-bottom-left-radius: 10px;
+        // }
+      }
+      .receive {
+        background: $chat-g;
+        color: black;
+        align-self: flex-start;
+
+        // &:before {
+        //   left: -7px;
+        //   width: 20px;
+        //   background-color: $chat-g;
+        //   border-bottom-right-radius: 16px 14px;
+        // }
+
+        // &:after {
+        //   left: -26px;
+        //   width: 26px;
+        //   background-color: $bg-sub1;
+        //   border-bottom-right-radius: 10px;
+        // }
       }
     }
   }
 }
 .bio {
   display: grid;
-  width: 50%;
+  width: 45%;
   .me-box {
     display: flex;
-    justify-content: space-around;
-    // justify-content: space-between;
-    margin-bottom: 20.5px;
+    // justify-content: space-around;
+    // margin-bottom: 20.5px;
+    justify-content: space-between;
+    margin-bottom: 40.5px;
   }
 
   .about-me {
@@ -311,6 +418,7 @@ h2 {
   margin: 0 auto;
   overflow: hidden;
   border-radius: 28px;
+
   &:hover::before {
     transform: translateX(0);
   }
@@ -341,6 +449,7 @@ h2 {
   height: 100%;
   flex-direction: row-reverse;
   position: relative;
+
   .slide-cover {
     position: relative;
     width: 55%;
