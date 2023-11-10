@@ -413,11 +413,6 @@ h2 {
 }
 //포트폴리오 섹션 공통
 .index-wrap {
-  // background-color: rgba(251, 251, 253, 1);
-
-  // background: $bg-sub1;
-  // background: #fbfbfd;
-
   background-color: rgba(244, 244, 246, 1);
   height: 100vh;
   display: flex;
@@ -441,8 +436,8 @@ h2 {
   animation: 2s 1.5s forwards;
   &:hover {
     filter: grayscale(0%);
-    transition: all 1.3s;
-    // transition: all 1s;
+    transition: all 1s;
+    // transition: all 1.3s;
   }
 
   &:hover::before {
