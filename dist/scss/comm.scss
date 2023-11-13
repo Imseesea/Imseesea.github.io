@@ -169,7 +169,7 @@ h2 {
         position: relative;
         padding: 10px 20px;
         border-radius: 25px;
-
+        // word-break: keep-all;
         &:before,
         &:after {
           content: "";
@@ -181,7 +181,7 @@ h2 {
       .p1 {
         position: absolute;
         top: -24px;
-        left: 55px;
+        left: 96px;
 
         &:before {
           right: -7px;
@@ -200,11 +200,11 @@ h2 {
       .p2 {
         position: absolute;
         top: 10px;
-        right: 9px;
+        right: 40px;
         &:before {
           left: -7px;
           width: 20px;
-          background-color: $chat-g;
+          background-color: $chat-b;
           border-bottom-right-radius: 16px 14px;
         }
 
@@ -218,7 +218,7 @@ h2 {
       .p3 {
         position: absolute;
         top: 160px;
-        right: -35px;
+        right: -41px;
         &:before {
           left: -7px;
           width: 20px;
@@ -236,7 +236,7 @@ h2 {
       .p4 {
         position: absolute;
         bottom: 10%;
-        right: 0;
+        right: -70px;
         &:before {
           left: -7px;
           width: 20px;
@@ -253,7 +253,7 @@ h2 {
       }
       .p5 {
         position: absolute;
-        bottom: -42px;
+        bottom: -30px;
         left: 30px;
         &:before {
           right: -7px;
@@ -271,8 +271,8 @@ h2 {
       }
       .p6 {
         position: absolute;
-        bottom: 84px;
-        left: -85px;
+        bottom: 120px;
+        left: -40px;
         &:before {
           right: -7px;
           width: 20px;
@@ -289,8 +289,8 @@ h2 {
       }
       .p7 {
         position: absolute;
-        top: 40px;
-        left: -54px;
+        top: 80px;
+        left: 20px;
         &:before {
           right: -7px;
           width: 20px;
@@ -308,7 +308,7 @@ h2 {
       .send {
         color: $w;
         background: $chat-b;
-        align-self: flex-end;
+        // align-self: flex-end;
 
         // &:before {
         //   right: -7px;
@@ -327,7 +327,7 @@ h2 {
       .receive {
         background: $chat-g;
         color: black;
-        align-self: flex-start;
+        // align-self: flex-start;
 
         // &:before {
         //   left: -7px;
@@ -360,10 +360,14 @@ h2 {
     justify-content: space-between;
     margin-bottom: 40.5px;
   }
+  .me-box-mb {
+    margin-bottom: 0;
+  }
 
   .about-me {
     background: $w;
-    padding: 30px;
+    padding: 23px;
+    // padding: 30px;
 
     box-sizing: border-box;
     border-radius: 28px;
@@ -406,12 +410,30 @@ h2 {
         font-weight: 400;
       }
     }
+    .ed {
+      padding-bottom: 20px;
+    }
   }
+  .skill {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .skill-lst {
+      display: flex;
+      flex-direction: column;
+      p {
+        padding-bottom: 20px;
+        &:last-child {
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
+  .work-wrap {
+    background: $w;
+  }
+  //포트폴리오 섹션 공통
 }
-.work-wrap {
-  background: $w;
-}
-//포트폴리오 섹션 공통
 .index-wrap {
   background-color: rgba(244, 244, 246, 1);
   height: 100vh;
@@ -624,15 +646,16 @@ h2 {
 }
 
 .mockup {
-  width: 1200px;
+  // width: 1200px;
+  height: 58vh;
   position: absolute;
-  left: 50%;
-  top: 50px;
+  right: 50%;
+  top: 50%;
   z-index: 100;
-  transform: translateX(-50%);
+  transform: translate(50%, -50%);
   img {
     display: block;
-    width: 100%;
+    height: 100%;
   }
 }
 
@@ -660,11 +683,12 @@ h2 {
   0% {
   }
   100% {
-    width: 500px;
+    // width: 500px;
+    height: 20vh;
     position: absolute;
     // left: 15%;
-    // right: -10%;
-    left: 85%;
-    top: 60%;
+    right: 10%;
+    // left: 85%;
+    top: 70%;
   }
 }
