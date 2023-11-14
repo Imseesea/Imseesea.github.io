@@ -474,7 +474,7 @@ h2 {
 .co .comment-box .comment-chat .p4 {
   position: absolute;
   bottom: 10%;
-  right: -70px;
+  right: -30px;
 }
 .co .comment-box .comment-chat .p4:before {
   left: -7px;
