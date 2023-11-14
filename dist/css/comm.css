@@ -619,6 +619,24 @@ h2 {
 .bio .skill .skill-lst p:last-child {
   padding-bottom: 0;
 }
+.bio .certification h4 {
+  padding: 20px 0;
+}
+.bio .certification .certification-lst {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.bio .certification .certification-lst span {
+  font-size: 16px;
+}
+.bio .certification .certification-lst p {
+  word-break: keep-all;
+  text-align: right;
+  font-size: 14px;
+  font-weight: 400;
+}
 .bio .work-wrap {
   background: #fff;
 }
@@ -753,14 +771,13 @@ h2 {
 }
 .inner-box .slide-desc .desc ul {
   padding: 0;
-  margin-bottom: 20px;
 }
 .inner-box .slide-desc .desc li {
-  margin-bottom: 0.625rem;
+  margin-bottom: 0.325rem;
   line-height: 1.5;
 }
 .inner-box .slide-desc .desc li span {
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   display: inline-block;
   margin-bottom: 20px;
   line-height: 30px;
@@ -774,26 +791,47 @@ h2 {
   font-weight: 600;
   width: 350px;
 }
+.inner-box .slide-desc strong {
+  padding-bottom: 15px;
+  font-weight: 300;
+  font-size: 14px;
+}
+.inner-box .slide-desc .sub-link a {
+  padding: 6px 8px;
+  font-size: 13px;
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.17648;
+  border-radius: 980px;
+  border: 3px solid;
+  border-top-width: 1px;
+  border-left-width: 1px;
+  margin-right: 2px;
+  transition: 0.3s;
+  min-width: 28px;
+  color: #000;
+  background: #e9e9eb;
+  border-color: #e9e9eb;
+}
+.inner-box .slide-desc .sub-link a:hover {
+  background-color: #e9e9eb;
+  color: #000;
+}
 .inner-box .slide-desc .link a {
   display: inline-block;
-  padding: 15px 20px;
-  border-radius: 50px;
   color: #fff;
   font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.17648;
+  border-radius: 50px;
+  border-radius: 980px;
   border: 3px solid;
   border-top-width: 1px;
   border-left-width: 1px;
   margin-right: 10px;
   transition: 0.3s;
-  background: #0071e3;
-  line-height: 1.17648;
-  font-weight: 400;
   min-width: 28px;
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  border-radius: 980px;
+  padding: 8px 16px;
   background: #0071e3;
 }
 .inner-box .slide-desc .link a:hover {
