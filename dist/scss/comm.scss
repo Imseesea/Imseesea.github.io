@@ -11,6 +11,23 @@ section {
   height: 100vh;
   position: relative;
 }
+#fp-nav {
+  ul {
+    li {
+      a {
+        span {
+          background: #333;
+        }
+      }
+      a.active {
+        span {
+          background: #0077ed;
+        }
+      }
+    }
+  }
+}
+
 h1 {
   // font-size: 80px;
   font-size: 72px;

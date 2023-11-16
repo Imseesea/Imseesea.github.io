@@ -267,6 +267,13 @@ section {
   position: relative;
 }
 
+#fp-nav ul li a span {
+  background: #333;
+}
+#fp-nav ul li a.active span {
+  background: #0077ed;
+}
+
 h1 {
   font-size: 72px;
   font-weight: 700;
